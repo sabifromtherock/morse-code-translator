@@ -18,3 +18,18 @@
     font-family: $secondary-font;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .input-form {
+    padding-top: 30px;
+    width: 500px;
+    border-left: 4px solid $secondary-color;
+    border-right: 4px solid $secondary-color;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+
+    &__input {
+      width: 80%;
+    }
+  }
+}
