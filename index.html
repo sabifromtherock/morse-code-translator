@@ -7,17 +7,19 @@
     <title>Morse Code Translator</title>
   </head>
   <body>
-    <header>Morse Code Translator</header>
+    <header class="header">
+      <h1 class="header__title">Morse Code Translator</h1>
+    </header>
     <main>
       <form class="input-form">
-        <label for="user-input" class="input-form__label"
-          >Type your text here:
-          <input type="text" id="user-input" class="input-form__input" />
+        <label for="user-input" class="input-form__label">
+          Type your text here:
         </label>
+        <input type="text" id="user-input" class="input-form__input" />
       </form>
-      <p class="paragragh">
-        Your morse code appears below:
-        <span class="paragragh__morse-code">
+      <p class="morse-code">
+        Your morse code appears below
+        <span class="morse-code__output">
           <br />
           <strong>..--..</strong>
         </span>
