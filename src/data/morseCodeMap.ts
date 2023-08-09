@@ -1,4 +1,6 @@
-const morseCodes = {
+import { MorseCodeMap } from "../types/MorseCodeMap";
+
+export const morseCodeMap: MorseCodeMap = {
   A: ".-",
   B: "-...",
   C: "-.-.",
@@ -20,17 +22,9 @@ const morseCodes = {
   S: "...",
   T: "-",
   U: "..-",
+  V: "...-",
   W: ".--",
   X: "-..-",
   Y: "-.--",
   Z: "--..",
-};
-const convertToMorse = function (string) {
-  const charsArray = string.toUpperCase().split("");
-
-  return charsArray
-    .map(function (char) {
-      return morseCodes[char] ? morseCodes[char] : char;
-    })
-    .join("");
 };
