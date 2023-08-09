@@ -1,0 +1,14 @@
+@use "./variables" as *;
+
+.header {
+  background-color: $secondary-color;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  margin-bottom: 30px;
+
+  &__title {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+}
