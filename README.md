@@ -13,7 +13,8 @@ To get started with the Morse Code Translator, follow these steps:
 
 ## Usage
 
-1. Open your web browser and navigate to `http://localhost:5173` (or the port specified by Vite).
+1. Open your web browser and navigate to `http://localhost:5173` (or the port specified by Vite)<br>
+   or visit `https://sabifromtherock.github.io/morse-code-translator/`
 2. Enter text in the input field to translate to Morse code.
 
 ## Tech stack
