@@ -1,0 +1,17 @@
+@use "./variables" as *;
+
+button {
+  margin-top: 5px;
+  background-color: $secondary-color;
+  color: $primary-color;
+  padding: 10px 20px;
+  font-size: 2rem;
+  border-radius: 10px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  button {
+    border-radius: unset;
+  }
+}

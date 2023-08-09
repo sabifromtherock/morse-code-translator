@@ -3,33 +3,38 @@ import { convertToMorse } from "./utils/morseCodeTranslator";
 import { decodeMorseString } from "./utils/decode";
 
 const input = document.querySelector(".input-form__input") as HTMLElement;
-const morseCode = document.querySelector(
+const output = document.querySelector(
   ".morse-code__output"
 ) as HTMLParagraphElement;
 const button = document.querySelector("button") as HTMLButtonElement;
+const label = document.querySelector("label") as HTMLLabelElement;
 
 let isClicked: boolean = false;
 
-if (!input || !morseCode || !button) throw new Error("Issue with selector");
+if (!input || !output || !button) throw new Error("Issue with selector");
 
 const handleInput = (event: Event): void => {
   const userInput: string = (event.currentTarget as HTMLInputElement).value;
 
   if (!isClicked) {
-    morseCode.innerHTML = convertToMorse(userInput);
+    output.innerHTML = convertToMorse(userInput);
   } else {
-    morseCode.innerHTML = decodeMorseString(userInput);
+    output.innerHTML = decodeMorseString(userInput);
   }
 };
 
 const handleChangeTranslation = (): void => {
   isClicked ? (isClicked = false) : (isClicked = true);
 
-  isClicked
-    ? (button.innerText = "Morse to text")
-    : (button.innerText = "Text to Morse");
+  if (isClicked) {
+    button.innerText = "Morse to text";
+    label.innerText = "Type your Morse code here:";
+  } else {
+    button.innerText = "Text to Morse";
+    label.innerText = "Type your text here:";
+  }
 
-  morseCode.innerHTML = "";
+  output.innerHTML = "";
 };
 
 input.addEventListener("input", handleInput);
