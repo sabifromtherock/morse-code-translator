@@ -1,6 +1,12 @@
 # Morse Code Translator
 
-A web application that translates text into Morse code. It provides an intuitive user interface and offers an interactive way to learn and use Morse code.
+The Morse Code Translator is a simple web application built to translate text to Morse code and vice versa. It provides an intuitive user interface and offers an interactive way to learn and use Morse code.
+
+## Features
+
+- Translate text to Morse code.
+- Translate Morse code to text.
+- User-friendly interface.
 
 ## Getting Started
 
@@ -15,7 +21,7 @@ To get started with the Morse Code Translator, follow these steps:
 
 1. Open your web browser and navigate to `http://localhost:5173` (or the port specified by Vite)<br>
    or visit `https://sabifromtherock.github.io/morse-code-translator/`
-2. Enter text in the input field to translate to Morse code.
+2. Enter text in the input field to translate to Morse code, or click the "Text to Morse" button to translate Morse code to text.
 
 ## Tech stack
 
